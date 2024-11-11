@@ -1,6 +1,9 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-    "ghcr.io/devcontainers/features/aws-cli:1.1.0": {}
-  }
+    "name": "AWS-examples",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "settings": {},
+    "extensions": [],
+    "postCreateCommand": "aws --version"
 }
